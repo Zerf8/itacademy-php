@@ -9,13 +9,10 @@
 
 
     echo $ejInteger;
-    echo "\n";
     echo $ejDouble;
-    echo "\n";
     echo $ejString;
-    echo "\n";
     echo $ejBoolean;
-    echo "\n";
+    
 
 
 ?>
