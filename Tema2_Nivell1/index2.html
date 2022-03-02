@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHP IT ACADEMY - Sprint 1 - Tema 2 - Exercici 1</title>
+    <style>
+        body{
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            color:white;
+        }
+
+        header{
+            background-color: #2D4059;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            text-align: center;
+            border: 10px solid black;
+            padding: 10px;
+        }
+
+        #logo {
+            background-color: #EA5455;
+            flex: inherit;
+            width: 20%;
+        }
+
+        nav {
+            background-color: #EA5455;
+            flex: inherit;
+            width:60%;
+        }
+        #rrss {
+            background-color: #EA5455;
+            flex: inherit;
+            width:20%;
+        }
+        #imagencabecera {
+            margin-top:20px;
+            background-color: orange;
+            width:100%;
+            height:150px;
+            
+        }
+
+        main {
+            margin-top:20px;
+            background-color: #4E4E6A;
+            display: flex;
+            border: 10px solid black;
+            padding: 10px;
+            flex-wrap:wrap;
+        }
+
+        section {
+            display:flex;
+            flex-wrap:wrap;
+            width:65%;
+        }    
+        article {
+            background-color: #1F6CB0;
+            
+            flex:inherit;
+           
+            width:49%;
+            margin-right:2px;
+            margin-bottom:2px;
+            
+        }    
+
+        aside {
+            margin-left: 5px;
+            background-color: red;
+            width:34%;
+        
+        }
+
+        .contenidoAside {
+            background-color: #FEEA85;
+            margin: 5px;
+
+        }
+
+        #info {
+            margin-top:5px;
+            background-color: #70A3C4;
+            width:100%;
+        }
+        footer{
+            margin-top: 20px;
+            background-color:#E6AF2E;
+            padding: 10px;
+            border: 10px solid black;
+            text-align: center;
+
+        }
+        /*tamaño tablet*/
+        @media only screen and (max-width: 768px) {
+           
+            main{
+                flex: 100%;
+            }
+            section {
+                width:100%;
+                background-color: aqua;
+               
+            }
+            aside {
+                width:100%;
+                
+            }
+        }
+
+
+
+        
+    </style>    
+</head>
+<body>
+    <header>
+        <div id="logo">logo</div>
+        <nav>menusssss</nav>
+        <div id="rrss">rrss</div>
+        <div id="imagencabecera">imagen cabecera</div>
+     
+    </header>
+
+     
+    <main>
+        <section>
+            <article>1</article>
+            <article>2</article>
+            <article>3</article>
+            <article>4</article>
+            <div id="info">extra</div>    
+        </section>
+        
+        <aside>
+            <div class="contenidoAside">contenido aside1</div>
+            <div class="contenidoAside">contenido aside2</div>
+        </aside>
+    </main>
+
+    <footer>
+        FOOTER
+    </footer>
+    <div id=""></div>
+</body>
+</html>
