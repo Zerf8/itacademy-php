@@ -12,7 +12,9 @@
     echo $ejDouble;
     echo $ejString;
     echo $ejBoolean;
-    
+   
 
+
+    
 
 ?>
