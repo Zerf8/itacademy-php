@@ -1,19 +1,22 @@
+VOY POR AQUI
+
+
 <?php 
 /*
-- Exercici 1
-    Escriure un programa PHP per calcular la suma dels dos valors enters donats. Si els dos valors són iguals, torna el doble de la seva suma.
+- Exercici 2
+Escriu un programa PHP per intercanviar el primer i últim caràcter d'una cadena donada i imprimeix la nova cadena.
 
-    Exemple
+Exemple
 
-    Entrada
-    1, 2
-    3, 2
-    2, 2
+Entrada
+wxyz
+a
+ab
 
-    Sortida
-    3
-    5
-    8
+Sortida
+zxyw
+a
+ba
 */
 
 ?>
