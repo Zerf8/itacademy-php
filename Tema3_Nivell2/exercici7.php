@@ -1,10 +1,8 @@
-VOY POR AQUI
-
-
 <?php 
 /*
 - Exercici 2
-Escriu un programa PHP per intercanviar el primer i últim caràcter d'una cadena donada i imprimeix la nova cadena.
+Escriu un programa PHP per intercanviar el primer i últim caràcter d'una cadena donada i 
+imprimeix la nova cadena.
 
 Exemple
 
@@ -26,24 +24,24 @@ ba
     <input name="insert" type="hidden"  />
     <input value="" name="valor1" id="valor1" type="text"  />
     <br>
-    <input value="" name="valor2" id="valor2" type="text"  />
-    <br>
     <input type="submit" value="enviar" />
     </form>
 
 
 <?php
 
-    if(isset($_POST['insert']) && ($_POST['valor1'])!="" && ($_POST['valor2'])!="") {
+    if(isset($_POST['insert']) && ($_POST['valor1'])!="") {
+        $cadena= $_POST['valor1'];
+        echo "<h1>". $cadena ."</h1>";
 
-        if ($_POST['valor1'] != $_POST['valor2']) {
-            echo "<p>La suma de ". $_POST['valor1'] ." y ". $_POST['valor2'] ." es " . ($_POST['valor1'] + $_POST['valor2'])."</p>";
-        }
-        else
-        {
-            echo "<h2>¡¡¡NÚMEROS IGUALES!!!</h2>";
-            echo "(".$_POST['valor1'] ." + ". $_POST['valor2'] .") x 2 = ". (($_POST['valor1'] + $_POST['valor2'])*2);
-        }
+        $primerCaracter=substr($cadena, 0,1);
+        $ultimoCaracter=substr($cadena,-1);
+
+        $cadena=substr_replace($cadena, $ultimoCaracter, 0, 1);
+
+        $cadena=substr_replace($cadena, $primerCaracter, -1);
+        echo "<h1>". $cadena ."</h1>";
+
     } 
 
 ?>
