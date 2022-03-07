@@ -18,8 +18,6 @@ ba
 */
 
 ?>
-
-    <hr />
     <form method="post" action="#">
     <input name="insert" type="hidden"  />
     <input value="" name="valor1" id="valor1" type="text"  />

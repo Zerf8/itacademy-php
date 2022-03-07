@@ -19,6 +19,7 @@
 ?>
 
     <hr />
+    <h2>Escribe dos números enteros</h2>
     <form method="post" action="#">
     <input name="insert" type="hidden"  />
     <input value="" name="valor1" id="valor1" type="text"  />

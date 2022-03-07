@@ -1,29 +1,28 @@
 <?php
-    // - Exercici 1
-    // Escriu un programa en PHP per convertir una cadena en un array 
-    //(retallant cada caràcter i eliminant les línies buides).
-    
-    // Entrada
-    // Hello world
-    
-    // Sortida
-    // array(10) { [0]=> string(1) "H" [1]=> string(1) "e" [2]=> string(1) "l" [3]=> string(1) "l" [4]=> string(1) "o" 
-    //    [5]=> string(1) "W" [6]=> string(1) "o" [7]=> string(1) "r" [8]=> string(1) "l" [9]=> string(1) "d"}
+//    - Exercici 2
+//    Escriu un programa en PHP que compta el nombre total de vegades que un valor existeix en l'array.
 ?>
 
-    <hr />
-    <h2>Escribe un texto</h2>
-
+<hr />
+    <h2>Escribe un texto y un carácter a buscar</h2>
     <form method="post" action="#">
     <input name="insert" type="hidden"  />
     <input value="" name="valor1" id="valor1" type="text"  />
     <br>
+    <input value="" name="caracterBuscar" id="caracterBuscar" type="text"  />
     <input type="submit" value="enviar" />
     </form>
 
+ 
+
+
 <?php
+
+    
     if(isset($_POST['insert']) && ($_POST['valor1'])!="") {
         $cadena= $_POST['valor1'];
+        echo "<h2>$cadena</h2>";
+        $caracterBuscar= $_POST['caracterBuscar'];
 
         $x=0;
         $arrCaracteres=[]; //inicializamos array
@@ -36,9 +35,12 @@
             }    
         }
 
-        var_dump($arrCaracteres);
+        //var_dump($arrCaracteres);
 
+        buscarCaracterArray($arrCaracteres, $caracterBuscar);
     }    
+
+   
 
     function guardarEnArray($caracter, $posicion,$arrCaracteres) {
       
@@ -47,4 +49,15 @@
         
         return $arrCaracteres;        
     }
+
+    function buscarCaracterArray($arrCaracteres, $caracterBuscar){
+        $numApariciones=0;
+        for ($i=0;$i<=(count($arrCaracteres)-1);$i++) {
+            if ($arrCaracteres[$i]==$caracterBuscar) {
+                $numApariciones++;
+            }
+        }    
+        echo "<h2>El carácter '$caracterBuscar' aparece en $numApariciones ocasiones</h2>";
+    }
+
 ?>    
