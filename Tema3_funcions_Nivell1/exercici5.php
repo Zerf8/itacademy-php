@@ -30,13 +30,13 @@
         if ($nota >=60) {
             $grau="PRIMERA DIVISIÓ";
         }
-        else if ($nota >44 && $nota<60) {
+        else if ($nota >44) {
             $grau="SEGONA DIVISIÓ";
         }
-        else if ($nota >32 && $nota<45) {
+        else if ($nota >32) {
             $grau="TERCERA DIVISIÓ";
         }
-        else if ($nota <33) {
+        else  {
             $grau="REPROVAT";
         }
         
